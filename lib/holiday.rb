@@ -86,5 +86,5 @@ holiday_hash.find_all do |season , holiday|
   holiday.values.include?("BBQ")
   holiday
 end
-  
+
 end
