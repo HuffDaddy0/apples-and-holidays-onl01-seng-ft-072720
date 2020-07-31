@@ -58,7 +58,7 @@ def all_supplies_in_holidays(holiday_hash)
         holiday_grammer = holiday_s.to_s.gsub("_", " ").capitalize.split(" ")
         #binding.pry
         if holiday_grammer.length > 1
-          holiday_grammer.map do |word|
+        holiday_grammer = holiday_grammer.map do |word|
           word.capitalize
           #binding.pry
         end
