@@ -56,7 +56,7 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{season.capitalize}:"
       holiday.each do |holiday_s , supplies|
         holiday_grammer = holiday_s.to_s.gsub("_", " ").capitalize.split(" ")
-        binding.pry
+        #binding.pry
         if holiday_grammer.length > 1
           holiday_grammer.map do |word|
           word.capitalize
@@ -64,7 +64,7 @@ def all_supplies_in_holidays(holiday_hash)
         end
       end
         holiday_grammer.join
-
+        binding.pry
     puts "  #{holiday_grammer}: #{supplies.join(supplies.last ? ", " : "")}"
 end
   end
