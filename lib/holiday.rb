@@ -60,7 +60,7 @@ def all_supplies_in_holidays(holiday_hash)
           word.capitalize
         end
         holiday_grammer.join(" ")
-    puts "  #{holiday_grammer}: #{supplies.join(supplies.last ? ", " : "")}"
+    puts "  #{holiday_grammer.to_s}: #{supplies.join(supplies.last ? ", " : "")}"
   end
   end
   # iterate through holiday_hash and print items such that your readout resembles:
