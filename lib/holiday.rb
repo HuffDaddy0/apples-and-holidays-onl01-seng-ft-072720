@@ -56,11 +56,11 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{season.capitalize}:"
       holiday.each do |holiday_s , supplies|
         holiday_grammer = holiday_s.to_s.gsub("_", " ").split(" ")
-        holiday_grammer.map do |word|
+        grammer_finish = holiday_grammer.map do |word|
           word.capitalize
         end
-        holiday_grammer.join(" ")
-    puts "  #{holiday_grammer.to_s}: #{supplies.join(supplies.last ? ", " : "")}"
+        grammer_finish.join(" ")
+    puts "  #{grammer_finish}: #{supplies.join(supplies.last ? ", " : "")}"
   end
   end
   # iterate through holiday_hash and print items such that your readout resembles:
