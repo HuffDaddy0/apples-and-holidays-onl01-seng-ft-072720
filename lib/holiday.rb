@@ -58,10 +58,11 @@ def all_supplies_in_holidays(holiday_hash)
         holiday_grammer = holiday_s.to_s.gsub("_", " ").split(" ")
         grammer_finish = holiday_grammer.map do |word|
           word.capitalize
-        end
-        grammer_finish.join
-      end
+        end        grammer_finish.join
+
     puts "  #{grammer_finish}: #{supplies.join(supplies.last ? ", " : "")}"
+  end
+end
   end
   end
   # iterate through holiday_hash and print items such that your readout resembles:
