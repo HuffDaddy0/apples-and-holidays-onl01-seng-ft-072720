@@ -65,7 +65,7 @@ def all_supplies_in_holidays(holiday_hash)
       end
         holiday_grammer.join("")
         #binding.pry
-    puts "  #{holiday_grammer.join(")")}: #{supplies.join(supplies.last ? ", " : "")}"
+    puts "  #{holiday_grammer.join("")}: #{supplies.join(supplies.last ? ", " : "")}"
 end
   end
   end
