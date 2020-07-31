@@ -55,11 +55,12 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holiday|
     puts "#{season.capitalize}:"
       holiday.each do |holiday_s , supplies|
-        holiday_grammer = holiday_s.to_s.gsub("_", " ").split(" ")
-        grammer_finish = holiday_grammer.map do |word|
+        holiday_grammer = holiday_s.to_s.gsub("_", " ")capitalize.split(" ")
+        if holiday_grammer.length > 1
+          holiday_grammer.map do |word|
           word.capitalize
         end
-        grammer_finish.join
+        holiday_grammer.join
 
     puts "  #{grammer_finish}: #{supplies.join(supplies.last ? ", " : "")}"
 end
